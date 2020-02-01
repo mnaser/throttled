@@ -21,7 +21,7 @@ from time import time
 import dbus
 from dbus.mainloop.glib import DBusGMainLoop
 from gi.repository import GLib
-from mmio import MMIO, MMIOError
+from throttled.mmio import MMIO, MMIOError
 
 DEFAULT_SYSFS_POWER_PATH = '/sys/class/power_supply/AC*/online'
 VOLTAGE_PLANES = {'CORE': 0, 'GPU': 1, 'CACHE': 2, 'UNCORE': 3, 'ANALOGIO': 4}
